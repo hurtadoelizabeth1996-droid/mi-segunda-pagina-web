@@ -1,0 +1,67 @@
+:root {
+    --primary: #2563eb;
+    --secondary: #1e40af;
+    --danger: #dc2626;
+    --success: #16a34a;
+    --warning: #ca8a04;
+    --bg-light: #f8fafc;
+    --white: #ffffff;
+}
+
+body { 
+    background-color: var(--bg-light); 
+    font-family: 'Inter', system-ui, sans-serif;
+    color: #1e293b;
+}
+
+.navbar {
+    background: #0f172a;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.logo span { color: var(--primary); }
+
+.nav-links { display: flex; list-style: none; gap: 20px; }
+.nav-links a { color: #cbd5e1; text-decoration: none; transition: 0.3s; }
+.nav-links a:hover { color: var(--primary); }
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    margin: 25px 0;
+}
+
+.card {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+    border-top: 5px solid var(--primary);
+}
+
+.card i { font-size: 2rem; color: var(--primary); margin-bottom: 10px; }
+
+/* Estados de Servicio Técnico */
+.status-badge {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+.status-pendiente { background: #fef3c7; color: #92400e; }
+.status-reparado { background: #dcfce7; color: #166534; }
+.status-entregado { background: #e0e7ff; color: #3730a3; }
+
+.receipt {
+    background: #fff;
+    padding: 2rem;
+    border: 2px dashed #cbd5e1;
+    border-radius: 8px;
+    margin-top: 2rem;
+    max-width: 400px;
+}
